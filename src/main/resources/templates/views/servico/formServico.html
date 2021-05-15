@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/leyout">
+
+<head>
+
+<meta charset="UTF-8">
+ <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+<title>Serviços</title>
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="../../../materialize/css/materialize.min.css" media="screen,projection" />
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">BARBER AFRO HAIR</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="clientes/cadastroCliente" >Cadastrar Clientes</a></li>
+          <li><a href="/servicos" >Lista de Serviços </a></li>
+           <li><a href="/agendarAtendimento">Agendar </a></li>
+            <li><a href="/" >Aqui vai a lista de agendamento por enquanto volta Inicio</a></li>
+             <li><a href="/" >Retornar Inicio</a></li>
+                
+      </ul>
+    </div>
+  </nav>
+<body>
+	<h1>Servicos :</h1>
+
+	<form class="container" method="post">
+		Nome:<input type="text" value="" name="nome" />
+		<div class="row">
+			<div class="input field col s6">
+				Descrição:<input type="text" value="" name="descricao" />
+			</div>
+			<div class="input field col s6">
+				Detalhamento:<input type="text" value="" name="detalhamento" />
+			</div>
+			<div class="input field col s3">
+				Profissional:<input type="text" value="" name="nomeProfissional" />
+			</div>
+			<div class="input field col s3">
+				Tempo médio execução :<input type="number" value=""
+					name="tempoExecucao" />
+			</div>
+		</div>
+		
+		<button class="waves-effect waves-light btn" type="submit">Salvar </button>
+
+	</form>
+	<!--JavaScript at end of body for optimized loading-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
